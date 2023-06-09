@@ -1,0 +1,174 @@
+{
+    "items": [
+        {
+            "Question": "HTML stands for -",
+            "Choices": [
+                "HighText Machine Language",
+                "HyperText and links Markup Language",
+                "HyperText Markup Language",
+                "None of these"
+            ],
+            "Answer": "HyperText Markup Language",
+            "Selected":""
+        },
+        {
+            "Question": "The correct sequence of HTML tags for starting a webpage is - ",
+            "Choices": [
+                "Head, Title, HTML, body",
+                "HTML, Body, Title, Head",
+                "HTML, Head, Title, Body",
+                "HTML, Head, Body, Title"
+            ],
+            "Answer": "HTML, Head, Title, Body",
+            "Selected":""
+        },
+        {
+            "Question": "Which of the following element is responsible for making the text bold in HTML?",
+            "Choices": [
+                "<pre>",
+                "<a>",
+                "<b>",
+                "<br>"
+
+            ],
+            "Answer": "<b>",
+            "Selected":""
+        },
+        {
+            "Question": "Which of the following tag is used for inserting the largest heading in HTML?",
+            "Choices": [
+                "<h3>",
+                "<h1>",
+                "<h5>",
+                "<h6>"
+            ],
+            "Answer": "<h1>",
+            "Selected":""
+        },
+        {
+            "Question": "Which of the following tag is used to insert a line-break in HTML?",
+            "Choices": [
+                "<br>",
+                "<a>",
+                "<pre>",
+                "<b>"
+            ],
+            "Answer": "<br>",
+            "Selected":""
+        },
+        {
+            "Question": "How to create an unordered list (a list with the list items in bullets) in HTML?",
+            "Choices": [
+                "<ul>",
+                "<ol>",
+                "<li>",
+                "<i>"
+            ],
+            "Answer": "<ul>",
+            "Selected":""
+        },
+        {
+            "Question": "Which of the following attribute is used to provide a unique name to an element?",
+            "Choices": [
+                    
+                "class",
+                "id",
+                "type",
+                "None of the above"
+
+            ],
+            "Answer": "id",
+            "Selected":""
+        },
+        {
+            "Question": "How to create an ordered list (a list with the list items in numbers) in HTML?",
+            "Choices": [
+                
+                    "<ul>",
+                    "<ol>",
+                    "<li>",
+                    "<i>"
+ 
+            ],
+            "Answer": "<ol>",
+            "Selected":""
+        },
+        {
+            "Question": "Which of the following element is responsible for making the text italic in HTML?",
+            "Choices": [
+                "<i>",
+                "<italic>",
+                "<it>",
+                "<pre>"
+            ],
+            "Answer": "<i>",
+            "Selected":""
+        },
+        {
+            "Question": "The <hr> tag in HTML is used for -",
+            "Choices": [
+                "new line",
+                "vertical ruler",
+                "new paragraph",
+                "horizontal ruler"
+            ],
+            "Answer": "horizontal ruler",
+            "Selected":""
+        },
+        {
+            "Question": "<input> is -",
+            "Choices": [
+                "a format tag.",
+                "an empty tag.",
+                "All of the above",
+                "None of the above"
+            ],
+            "Answer": "an empty tag.",
+            "Selected":""
+        },
+        {
+            "Question": "Which of the following tag is used to make the underlined text?",
+            "Choices": [
+                "<i>",
+                "<ul>",
+                "<u>",
+                "<pre>"
+            ],
+            "Answer": "<u>",
+            "Selected":""
+        },
+        {
+            "Question": "Which of the following tag is used to define options in a drop-down selection list?",
+            "Choices": [
+                "<select>",
+                "<list>",
+                "<dropdown>",
+                "<option>"
+            ],
+            "Answer": "<option>",
+            "Selected":""
+        },
+        {
+            "Question": "HTML tags are enclosed in-",
+            "Choices": [
+                "# and #",
+                "{ and }",
+                "! and ?",
+                "< and >"
+            ],
+            "Answer": "< and >",
+            "Selected":""
+        },
+        {
+            "Question": "Which of the following tag is used to add rows in the table?",
+            "Choices": [
+                "<td> and </td>",
+                "<th> and </th>",
+                "<tr> and </tr>",
+                "None of the above"
+            ],
+            "Answer": "<tr> and </tr>",
+            "Selected":""
+        }
+    ]
+}
