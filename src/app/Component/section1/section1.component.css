@@ -1,0 +1,46 @@
+
+#summer{
+    filter: grayscale(60%);
+    box-sizing: border-box !important;
+
+    margin-bottom: 30px;
+}
+img{
+    width: 100rem;
+    max-height: 100vh;
+   }
+#intro{
+    text-align: center ;
+}
+#summerh{
+  font-weight: 700;
+    color: #faf9f8; 
+}
+@media (min-width: 420px){
+    #summerh{
+       margin-top: -7rem;
+    font-size: 1rem;  }
+        #summerp{
+            font-size: x-small;}
+
+}
+@media (min-width: 768px){
+    #summerh{
+        margin-top: -16rem; 
+        font-size: 5rem;   }
+        #summerp{
+            font-size: 2rem;}
+
+}
+
+#intro:hover{
+    filter: grayscale(100%);
+}
+#summerp{
+    color: antiquewhite;
+  
+}
+button{
+    margin-right: 2rem;
+    width: 14rem;
+}

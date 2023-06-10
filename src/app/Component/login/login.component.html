@@ -1,0 +1,27 @@
+<div class="mt-5">
+    <div class="container">
+        <form [formGroup]="loginForm" (submit)="login($event)">
+            <div class="mb-3 ">
+              <label for="exampleInputEmail1" class="form-label">Username</label>
+              <input [(ngModel)]="username" formControlName="username" placeholder="Enter your username" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <ng-container *ngIf="getUsername.touched">
+                <div class="text-danger mt-2" *ngIf="getUsername.hasError('required')">*username is required</div>
+                <div class="text-danger mt-2" *ngIf="getUsername.hasError('minlength')">*username must be greater than 3 chars</div>
+              </ng-container>
+              
+              <div id="emailHelp" class="form-text text-primary">We'll never share your email with anyone.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input [(ngModel)]='password' formControlName="pass" placeholder="Enter your password" type="password" class="form-control" id="exampleInputPassword1">
+              <ng-container *ngIf="getUsername.touched">
+                <div class="text-danger mt-2" *ngIf="getPassword.hasError('required')">*password is required</div>
+                <div class="text-danger mt-2" *ngIf="getPassword.hasError('minlength')">*password must be greater than 3 chars</div>
+              </ng-container>
+              <div id="emailHelp" class="form-text mt-2 text-primary">We'll never share your password with anyone.</div>
+            </div>
+            <p class="text-danger fw-bold" *ngIf="loginForm.status == 'INVALID'">Please enter valid Student Data!!</p>
+            <button type="submit" class="btn btn-dark">Login</button>
+        </form>
+    </div>
+</div>

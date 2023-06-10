@@ -1,0 +1,45 @@
+i{
+    font-size: xx-large;
+ margin-right: 2rem;
+}
+
+.contact{
+  
+    text-align: center;
+    justify-content: center;
+  
+}
+.icontact{
+  
+    display: inline;
+}
+p{
+    display: inline;
+}
+.text-light{
+    padding-top: 2rem;
+}
+#loc:hover{
+    color: rgb(218, 218, 36);
+    cursor: pointer;
+}
+#info:hover{
+    color: aqua;
+    cursor: pointer;
+}
+#tel:hover{
+    color: rgb(13, 195, 13);
+    cursor: pointer;
+}
+#facebook:hover{
+    color: blue;
+    cursor: pointer;
+}
+#twitter:hover{
+    color: blue;
+    cursor: pointer;
+}
+#instagram:hover{
+    color: red;
+    cursor: pointer;
+}

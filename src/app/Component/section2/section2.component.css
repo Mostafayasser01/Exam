@@ -1,0 +1,38 @@
+.section2{
+    margin-top: 20px;
+}
+h3{
+    display: inline-block;
+}
+i{
+   font-size: xx-large;
+   color: red;
+}
+i:hover{
+    color: blue;
+}
+img{
+    width: 50%;
+    
+}
+@media (min-width: 420px){
+    #img1{
+        width: 100%;     }
+       #img2{
+           width: 100%; 
+            }
+}
+@media (min-width: 768px){
+    #img1{
+        width: 50%;     }
+       #img2{
+           width: 50%; 
+           margin-left: 6.2rem;
+           }
+}
+#best{
+    color: rgb(196, 15, 15);
+}
+#cons{
+    font-weight: 800;
+}

@@ -1,0 +1,25 @@
+a{text-decoration: none;
+    color: black;
+    
+    padding-right: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    }
+    
+    
+    a:hover{color: green;}
+    a:active{color: green;}
+    a:focus{color: green;}
+    .p1{color:#40128B ;
+        font-weight: 600;}
+    
+    
+    .txt{color: gray;}
+    
+    .boximg{ 
+    
+        box-shadow: 10px 10px #967E76;}
+
+/* #myslider{
+    margin-top: 50px;
+} */

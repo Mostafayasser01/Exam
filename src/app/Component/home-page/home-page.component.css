@@ -1,0 +1,69 @@
+
+#summer{
+    filter: grayscale(60%);
+    box-sizing: border-box !important;
+    height: 40rem;  
+}
+img{
+    width: 100rem;
+    max-height: 50rem;
+   }
+#intro{
+    text-align: center ;
+}
+#summerh{
+  font-weight: 700;
+    color: #faf9f8; 
+}
+@media (min-width: 420px){
+    #summerh{
+       margin-top: -7rem;
+    font-size: 1rem;  }
+        #summerp{
+            font-size: x-small;}
+
+}
+@media (min-width: 768px){
+    #summerh{
+        margin-top: -16rem; 
+        font-size: 5rem;   }
+        #summerp{
+            font-size: 2rem;}
+
+}
+
+#intro:hover{
+    filter: grayscale(100%);
+}
+#summerp{
+    color: antiquewhite;
+  
+}
+button{
+    margin-right: 2rem;
+    width: 14rem;
+}
+
+
+a{text-decoration: none;
+    color: black;
+    
+    padding-right: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    }
+    
+    
+    a:hover{color: green;}
+    a:active{color: green;}
+    a:focus{color: green;}
+    .p1{color:#40128B ;
+        font-weight: 600;}
+    
+    
+    .txt{color: gray;}
+    
+    .boximg{ 
+        width:400px;
+        height:400px;
+        box-shadow: 10px 10px #967E76;}

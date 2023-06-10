@@ -1,0 +1,40 @@
+<div class="container-fluid" id="summer">
+    <div *ngFor="let image of images ; let i = index;">
+        <img class="img-fluid" id="img" [src]="image" alt="myimage" [hidden]="i!= currentIndex">
+    </div>
+    <div>
+        <blockquote id="intro">
+            <div class="quote ">
+                <h2 id="summerh">ONLINE COURSES</h2>
+                <p id="summerp"> Explore The Season Look up and Key Pieces Around The World</p>
+                <button type="button" class="btn fs offset-2 offset-lg-0  btn-outline-light">Go To Shop</button>
+            </div>
+        </blockquote>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="row mt-5">
+            <hr>
+            <hr>
+            <section id="myslider"></section>
+            <div class="col-md-6">
+                <img [src]="imgSrc" class="boximg ms-4">
+            </div>
+
+            <div class="col-md-6 pt-5 ">
+                <p class="p1">INNOVATIVE PROGRAMS</p>
+                <h1>Creative Learning <br> Solutions</h1>
+                <p class="txt fs-5 fw-light">Our school is known for the high-quality education programs.
+                    We work with the best teachers who know how to engage students in the learning activities!</p>
+
+
+                <div class="mt-5">
+                    <a href="#myslider" (click)="show()"> Productive </a>
+                    <a href="#myslider" (click)="show()"> Creative</a>
+                    <a href="#myslider" (click)="show()"> Succesful</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

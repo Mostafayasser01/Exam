@@ -1,0 +1,149 @@
+<div class="container-fluid">
+    <div class="row mb-5">
+        <div class="card h-50 text-white">
+            <img class="card-img w-100 " src="assets/images/contact.jpeg" alt="Card image">
+            <div class="card-img-overlay " id="contact">
+              <h5 class="card-title">Contact</h5>
+            <span><a [routerLink]="['/']">Home </a> / Conatct</span>
+            </div>
+          </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-4">
+            <div class="card p-3">
+                <div class="card-body ">
+                    <div class="mt-3 mb-2">
+
+                        <h1><i class="bi bi-globe-central-south-asia"></i></h1>
+                    </div>
+                    <h5 class="card-title">Address</h5>
+
+                    <p class="card-text">Urban Centre 402, Queen</p>
+                    <p class="card-text">Street , 2055 London</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card p-3">
+                <div class="card-body p-2">
+                    <div class="mt-3 mb-2">
+                        <h1><i class="bi bi-telephone"></i></h1>
+                    </div>
+                    <h5 class="card-title">Phone</h5>
+
+                    <p class="card-text">+0 (555) 123 45 67</p>
+                    <p class="card-text"> +0 (555) 123 45 67</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card p-3">
+                <div class="card-body p-2">
+                    <div class="mt-3 mb-2">
+                        <h1><i class="bi bi-envelope-at"></i></h1>
+                    </div>
+                    <h5 class="card-title">Mail</h5>
+                    <p class="card-text"> info@mail.com</p>
+                    <p class="card-text">job@mail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="valudition">
+
+    <div class="row m-5">
+        <div class="col-12 col-md-2  col-lg-5 ">
+            <div class="col-12 col-md-4  col-lg-12  coll">
+              <img  src="assets/images/contact.jpg"  alt="valudition" class="w-75 text-center">
+            </div>
+        </div>
+        <div class="col-11 offset-1 col-md-7 offset-1 col-lg-6 offset-1">
+            <form [formGroup]="contactForm" (submit)="contact($event)" class="text-center">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Username</label>
+                    <div class="row">
+                        <div class="col-6">
+                            <input formControlName="fName" type="text" class="form-control inpValid " id="fname"
+                                placeholder="First Name" value="">
+                        </div>
+                        <div class="col-6">
+                            <input formControlName="lName" type="text" class="form-control inpValid" id="lname"
+                                placeholder="Last Name" value="">
+                        </div>
+                    </div>
+
+                    <ng-container *ngIf="getfName.touched ">
+                        <div *ngIf="getfName.hasError('required')" class="alert errorMsg mt-2" id="errorName">First Name
+                            Is required
+                        </div>
+                        <div *ngIf="getfName.hasError('minlength') " class="alert errorMsg mt-2" id="errorName">First
+                            Name must Be more than 2 charctars
+                        </div>
+                    </ng-container>
+                    <ng-container *ngIf="getlName.touched">
+                        <div *ngIf="getlName.hasError('required') " class="alert errorMsg mt-2" id="errorName">Last Name
+                            Is required
+                        </div>
+                        <div *ngIf="getlName.hasError('minlength') " class="alert errorMsg mt-2" id="errorName">Last
+                            Name must Be more than 2 charctars
+                        </div>
+                    </ng-container>
+                </div>
+
+
+
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input formControlName="email" type="email" class="form-control inpValid" id="emailInp"
+                        placeholder="name@example.com">
+                    <ng-container *ngIf="getEmail.touched">
+                        <div *ngIf="getEmail.hasError('required')" class="alert  mt-2 errorMsg text-danger "
+                            id="errorEmail">
+                            Email Is required
+
+                        </div>
+
+                        <div *ngIf="getEmail.hasError('email')" class="alert  mt-2 errorMsg " id="errorEmail2">Email Is
+                            name@gmail.com</div>
+                    </ng-container>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Password</label>
+                    <input formControlName="password" type="password" class="form-control inpValid" id="passInp"
+                        placeholder="Password">
+
+                    <ng-container *ngIf="getPassword.touched">
+
+                        <div *ngIf="getPassword.hasError('required')" class="alert errorMsg mt-2 " id="errorPass">
+                            Password Is required
+                        </div>
+                        <div *ngIf="getPassword.hasError('minlength')" class="alert errorMsg mt-2 " id="errorPass2">
+                            Password must be 8 Char at least
+                        </div>
+                    </ng-container>
+
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="msgInp" rows="3" placeholder="Message" required></textarea>
+                </div>
+
+
+                <div class="m-5">
+                    <input type="button" value="Contact Us" class="btn btn-outline-success px-5 py-2 mx-4"
+                        id="btnSubmit">
+
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+
+</div>

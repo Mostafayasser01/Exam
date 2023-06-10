@@ -1,0 +1,14 @@
+<div class="container-fluid mb-5 pb-5" id="summer">
+    <div *ngFor="let image of images ; let i = index;">
+        <img class="img-fluid"  id="img" [src]="image" alt="myimage"[hidden]="i!= currentIndex">
+    </div>
+    <div >
+        <blockquote id="intro" >
+          <div class="quote ">
+            <h2 id="summerh"  >ONLINE COURSES</h2> 
+             <p id="summerp" > Explore The Season Look up  and Key Pieces  Around The World</p>
+            <button type="button" class="btn fs offset-2 offset-lg-0  btn-outline-light">Go To Shop</button>
+          </div>
+        </blockquote>
+   </div>
+</div>
