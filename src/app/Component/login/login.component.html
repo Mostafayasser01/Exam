@@ -21,6 +21,7 @@
               <div id="emailHelp" class="form-text mt-2 text-primary">We'll never share your password with anyone.</div>
             </div>
             <p class="text-danger fw-bold" *ngIf="loginForm.status == 'INVALID'">Please enter valid Student Data!!</p>
+            <p class="text-danger fw-bold" >{{vaild}}</p>
             <button type="submit" class="btn btn-dark">Login</button>
         </form>
     </div>

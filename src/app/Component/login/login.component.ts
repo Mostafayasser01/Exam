@@ -12,11 +12,13 @@ import { LoginService } from 'src/app/Services/login.service';
 export class LoginComponent {
   username:string='';
   password:string='';
+  vaild:string='';
   students:any;
   constructor(private x:LoginService,private router:Router){
     this.students=this.x.getAllStudents().subscribe({
       next: (Response)=>{
-        console.log(Response)
+        this.students=Response;
+        console.log(Response);
       },
       error: (myError)=>{
         console.log(myError)
@@ -38,8 +40,16 @@ export class LoginComponent {
     return this.loginForm.controls['pass']
   }
   login(e:Event){
-    this.x.login(this.username,this.password)
-    this.router.navigate(['/home'])
+
+    for (let i = 0; i < this.students.length; i++) {
+      if(this.students[i].email==this.username &&this.students[i].password==this.password)
+      {
+        this.x.login(this.students[i].username,this.password);
+        this.router.navigate(['/home']);
+        break;
+      }  
+    }
+    this.vaild="Email or Password is not Correct";
   }
 
 }
