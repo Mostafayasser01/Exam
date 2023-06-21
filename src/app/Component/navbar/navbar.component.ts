@@ -10,17 +10,17 @@ import { LoginService } from 'src/app/Services/login.service';
 })
 export class NavbarComponent {
   constructor(private x:LoginService,private router:Router){}
-  hi:string="";
+  
   get getUsername(){
       
       return  this.x.currentUser?.username;
   }
   get isLoggedIn(){
-    this.hi="Hi, ";
+    
     return this.x.isLoggedIn;
   }
   logout(){
     this.x.logOut();
-    this.hi='';
+    
   }
 }
